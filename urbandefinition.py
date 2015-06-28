@@ -8,12 +8,16 @@ def get_definition(term):
     soup = BeautifulSoup(r.content)
     definition = soup.find(class_='def-panel')
     meaning = definition.find(class_='meaning').text
+    print "Term: {}\n".format(term)
     print "Meaning: {}".format(meaning)
     example = definition.find(class_='example')
-    breaks = example.find_all('br')
-    for br in breaks:
-        br.replace_with('\n')
-    print "Example: {}".format(example.text)
+    if example.text.strip() != '':
+        breaks = example.find_all('br')
+        for br in breaks:
+            br.replace_with('\n')
+        print "Example: {}".format(example.text)
+    else:
+        pass
 
 
 

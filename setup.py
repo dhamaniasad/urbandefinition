@@ -8,7 +8,7 @@ install_requires = [
 setup(
     name='urbandefinition',
     install_requires=install_requires,
-    version=0.2,
+    version=0.3,
     description='Get Urban Dictionary definitions from the terminal',
     author='Asad Dhamani',
     author_email='dhamaniasad+code@gmail.com',

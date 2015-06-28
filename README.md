@@ -10,6 +10,8 @@ pip install urbandefinition
 #### Usage
 ```
 # urban no pun intended
+Term: no pun intended
+
 Meaning:
 Pun intended. (and now acknowledged)
 
